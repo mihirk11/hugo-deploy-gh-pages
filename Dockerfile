@@ -22,8 +22,7 @@ RUN apt-get update && \
 ##
 # Workaround for security issue until it is fixed. https://github.com/actions/runner-images/issues/6775
 ##
-RUN git config --system --add safe.directory *
-
+RUN git config --global --add safe.directory *
 ##
 # Copy over the action script.
 ##
