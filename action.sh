@@ -79,6 +79,7 @@ fi
 
 # https://github.com/actions/checkout/issues/766
 git config --global --add safe.directory "${PWD}"
+git config --global --add safe.directory /github/workspace/public
 
 ###
 # Build the site.
